@@ -3,5 +3,25 @@ extends includes/head.pug
 block vars
     - const title = "Only HTML and CSS"
 
+block append styles 
+    link(rel="stylesheet", href="styles/pages/index.sass")
+
 block append content
-    p hello from #{title}
+    p click the square to visit the page
+    .grid_container
+        .block 
+            a(href="/todo.pug") todo list 
+        .block 
+            a(href="/todo.pug") todo list
+        .block 
+            a(href="/todo.pug") todo list 
+        .block 
+            a(href="/todo.pug") todo list 
+        .block 
+            a(href="/todo.pug") todo list 
+        .block 
+            a(href="/todo.pug") todo list 
+        .block 
+            a(href="/todo.pug") todo list 
+        .block 
+            a(href="/todo.pug") todo list 
