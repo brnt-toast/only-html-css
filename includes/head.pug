@@ -14,14 +14,16 @@ html(lang="en")
         title #{title}
     body
         nav
-            a(href="/") home
-            a(
+            .internal_links
+                a(href="/") home
+                a(href="/about.pug") about 
+                a(href="/todo.pug") todo  
+            .external_links
+                a(
                 href="http://www.github.com/brnt-toast/only-html-css" 
                 target="_blank") repo
-            a(
+                a(
                 href="http://www.github.com/brnt-toast" 
                 target="_blank") github
-            a(href="/about.pug") about 
-            a(href="/todo.pug") todo  
         h1 #{title}
         block content
