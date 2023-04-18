@@ -5,4 +5,24 @@ block styles
     link(rel="stylesheet", href="/styles/pages/todo.sass")
 
 block content 
-    p hello from #{title}
+    form
+        input(type="text" placeholder='add todo')
+        button(type="submit") +
+
+    ol
+        li 
+            .todo
+                p sample todo
+                button del
+        li 
+            .todo
+                p sample todo
+                button del
+        li 
+            .todo
+                p sample todo
+                button del
+        li 
+            .todo
+                p sample todo
+                button del
