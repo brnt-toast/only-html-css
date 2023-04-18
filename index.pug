@@ -1,5 +1,7 @@
-- title = "Only HTML and CSS"
-include includes/head.pug
+extends includes/head.pug
 
-block content
+block vars
+    - const title = "Only HTML and CSS"
+
+block append content
     p hello from #{title}

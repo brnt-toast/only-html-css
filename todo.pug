@@ -1,10 +1,12 @@
-- title = "Todo"
+extends includes/head.pug
 
-include includes/head.pug
-block styles
+block vars
+    - const title = 'Todo'
+
+block append styles
     link(rel="stylesheet", href="/styles/pages/todo.sass")
 
-block content 
+block append content
     form
         input(type="text" placeholder='add todo')
         button(type="submit") +
@@ -14,15 +16,8 @@ block content
             .todo
                 p sample todo
                 button del
-        li 
-            .todo
-                p sample todo
-                button del
-        li 
-            .todo
-                p sample todo
-                button del
-        li 
-            .todo
-                p sample todo
-                button del
+        - for (var x = 0; x < 3; x++)
+            li
+                .todo 
+                    p sample todo 
+                    button del

@@ -1,3 +1,6 @@
+block vars 
+    - title
+
 doctype html
 html(lang="en")
     head
@@ -8,8 +11,10 @@ html(lang="en")
         block styles
             link(rel="stylesheet", href="styles/main.sass")
 
-        title #{title}    
+        title #{title}
     body
-        include ./nav.pug
+        nav
+            a(href="/") home 
+            a(href="/todo.pug") todo  
         h1 #{title}
         block content
