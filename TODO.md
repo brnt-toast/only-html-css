@@ -5,3 +5,5 @@
     * [x] group internal and external links
     * [x] style
         * exteral links to the right
+* [ ] json/yaml data/markup to configure new projects in one spot
+* [ ] create dev branch to write changes, don't break `main`
