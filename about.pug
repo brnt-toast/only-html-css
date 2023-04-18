@@ -1,8 +1,8 @@
 extends includes/head.pug
 
 block vars
-    - const title = "about"
+    - const title = "About This Project"
 
 
 block append content
-    p coming soon...
+    include:markdown-it(plugins=['markdown-it-task-lists']) /README.md
