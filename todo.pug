@@ -2,6 +2,7 @@ extends includes/head.pug
 
 block vars
     - const title = 'Todo'
+    - const NUM = 3
 
 block append styles
     link(rel="stylesheet", href="/styles/pages/todo.sass")
@@ -16,8 +17,10 @@ block append content
             .todo
                 p sample todo
                 button del
-        - for (var x = 0; x < 3; x++)
+        - for (var x = 0; x < NUM; x++)
             li
                 .todo 
                     p sample todo 
                     button del
+
+    p.message there are #{NUM + 1} unfinished tasks
