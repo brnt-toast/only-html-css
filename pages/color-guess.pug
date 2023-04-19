@@ -2,8 +2,15 @@ extends ../includes/head.pug
 
 block vars
     - const title = 'Colt Steele\'s Color Guess'
+    - const NUM = 6
 
 block append styles
     link(rel="stylesheet", href="/styles/pages/color-guess.sass")
 
 block append content
+    header 
+        h2#banner RGB(???,???,???)
+
+    .container 
+        - for (var x = 0; x < NUM; x++)
+            .block

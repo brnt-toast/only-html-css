@@ -1,4 +1,31 @@
-h1 
+@mixin background-color()
+    background-color: rgb(random(255),random(255),random(255))
+
+header > *
     background-color: steelblue
-    padding: 1rem
     color: white
+    text-align: center
+    margin: 0
+    padding: .5rem
+
+.controls
+    display: flex
+    justify-content: center
+    text-align: center
+
+
+.container
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin: 1rem auto
+    max-width: 600px
+    
+.block
+    width: 30%
+    padding-bottom: 30%
+    margin: .1rem
+    border-radius: 10px
+    @for $i from 1 to 7
+        &:nth-of-type(#{$i})
+            @include background-color()
