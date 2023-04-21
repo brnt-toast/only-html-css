@@ -1,0 +1,21 @@
+extends ../includes/head.pug
+
+block vars
+    - const title = 'Accordion'
+    - const NUM = 3
+
+block append styles
+    link(rel="stylesheet", href="/styles/components/accordion.sass")
+
+block append content
+    main
+        article  
+            p Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit, amet consectetur Lorem  
+                button -
+            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius unde non totam! Enim, optio ex, reiciendis voluptate placeat sed dolores, facilis aspernatur dignissimos blanditiis vel pariatur praesentium exercitationem harum. Exercitationem? 
+   
+        - for (var x = 0; x < NUM; x++)
+            p Lorem ipsum dolor sit, amet consectetur
+                button +
+
+        
