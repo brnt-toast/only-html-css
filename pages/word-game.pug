@@ -1,0 +1,41 @@
+extends ../includes/head.pug
+
+block vars
+    - const title = "Word Game"
+    - let i = 0
+
+block append styles 
+    link(rel="stylesheet", href="/styles/pages/word-game.sass")
+
+block append content
+    main
+        .status_bar
+            .lives
+                span &#x1F49C
+                span &#x1F49C
+                span &#x1F49C
+                span &#x1F49C
+                span &#x1F49C
+                span &#x1F494
+                span &#x1F494
+                span &#x1F494
+                span &#x1F494
+                span &#x1F494
+            .win_loss
+                span &#127867x1
+                span &#9760 x1
+
+
+        .display_container
+            - for(i = 0;i< 4; i++)
+                .display ?
+        .alpha
+            - for(i = 0;i< 26;i++)
+                .letter #{String.fromCharCode(65 + i).toLowerCase()}
+
+        footer
+            p 
+                | inspired by 
+                a(href='https://www.scuddl.com/') scuddl 
+                | written by 
+                a(href='https://www.reddit.com/user/whothatcodeguy/') whothatcodeguy
