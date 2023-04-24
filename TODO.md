@@ -8,3 +8,6 @@
 * [ ] json/yaml data/markup to configure new projects in one spot
 * [x] create dev branch to write changes, don't break `main`
     * done: 4/23/23
+## April 23, 2023
+* [ ] refactor word-game.pug `.lives` as two for loops
+* [ ] make all out going links `target=_blank`
